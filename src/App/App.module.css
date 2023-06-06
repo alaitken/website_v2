@@ -1,1 +1,10 @@
 
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  min-height: 100vh;
+  border: 3px solid magenta;
+}

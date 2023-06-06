@@ -1,0 +1,64 @@
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: aquamarine;
+    min-width: 100%;
+}
+
+.name {
+    margin: 0px;
+    font-size: 1.8rem;
+}
+
+.linkContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px solid gold;
+    flex-grow: 1;
+}
+
+.bars {
+    font-size: 1.3rem;
+    padding: 0.2rem;
+    animation: fadeInAnimation ease 3s;
+}
+
+.close {
+    font-size: 1.3rem;
+    padding: 0.2rem;
+    animation: fadeInAnimation ease 3s;
+}
+
+.link {
+    display: none;
+}
+
+.navButton {
+    display: inline;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+/* Desktop Size */
+@media only screen and (min-width: 800px) {
+    .link {
+        display: inline;
+    }
+
+    .navButton {
+        display: none;
+    }
+}
